@@ -1,0 +1,102 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:app="http://schemas.android.com/apk/res-auto"
+4    package="com.example.galaxycoffie3"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+12-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:7:5-72
+12-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:7:29-69
+13    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:8:5-88
+13-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:8:29-85
+14
+15    <application
+15-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:10:5-48:19
+16        android:allowBackup="true"
+16-->[com.nex3z:notification-badge:0.1.0] C:\Users\Charlool\.gradle\caches\transforms-2\files-2.1\01dfd39aaad633f495ca3c75a34d3443\notification-badge-0.1.0\AndroidManifest.xml:12:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.1] C:\Users\Charlool\.gradle\caches\transforms-2\files-2.1\8f8ab13dc8f4e84e14a8bb3d9ac92bc4\core-1.0.1\AndroidManifest.xml:22:18-86
+18        android:debuggable="true"
+19        android:icon="@drawable/cat_button_removebg_preview"
+19-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:11:9-61
+20        android:label="@string/app_name"
+20-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:12:9-41
+21        android:roundIcon="@mipmap/ic_launcher_round"
+21-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:13:9-54
+22        android:supportsRtl="true"
+22-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:14:9-35
+23        android:testOnly="true"
+24        android:theme="@style/AppTheme" >
+24-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:15:9-40
+25        <activity
+25-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:17:9-21:64
+26            android:name="com.example.galaxycoffie3.ChooseCoffeeWindow"
+26-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:18:13-47
+27            android:configChanges="orientation"
+27-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:19:13-48
+28            android:screenOrientation="portrait"
+28-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:20:13-49
+29            android:theme="@style/AppTheme.transparentTheme" />
+29-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:21:13-61
+30        <activity
+30-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:22:9-32:20
+31            android:name="com.example.galaxycoffie3.MainActivity"
+31-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:23:13-41
+32            android:configChanges="orientation"
+32-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:24:13-48
+33            android:screenOrientation="portrait" >
+33-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:25:13-49
+34            <intent-filter>
+34-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:26:13-30:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:27:17-69
+35-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:27:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:29:17-77
+37-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:29:27-74
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:33:9-36:52
+41            android:name="com.example.galaxycoffie3.Payment"
+41-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:34:13-36
+42            android:configChanges="orientation"
+42-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:35:13-48
+43            android:screenOrientation="portrait" />
+43-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:36:13-49
+44        <activity
+44-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:37:9-39:60
+45            android:name="com.example.galaxycoffie3.ChooseMilkWindow"
+45-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:38:13-45
+46            android:theme="@style/AppTheme.CustomTheme2" />
+46-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:39:13-57
+47        <activity
+47-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:40:9-45:57
+48            android:name="com.example.galaxycoffie3.ShoppingCart"
+48-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:41:13-41
+49            android:configChanges="orientation"
+49-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:42:13-48
+50            android:label="Cart"
+50-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:43:13-33
+51            android:screenOrientation="portrait"
+51-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:44:13-49
+52            android:theme="@style/AppTheme.testTheme" />
+52-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:45:13-54
+53        <activity android:name="com.example.galaxycoffie3.ShareOrder" />
+53-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:46:9-48
+53-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:46:19-45
+54        <activity android:name="com.example.galaxycoffie3.TransitionScreen" />
+54-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:47:9-54
+54-->C:\Users\Charlool\AndroidStudioProjects\GalaxyCoffee\app\src\main\AndroidManifest.xml:47:19-51
+55    </application>
+56
+57</manifest>

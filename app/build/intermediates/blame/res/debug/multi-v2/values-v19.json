@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Charlool\\AndroidStudioProjects\\GalaxyCoffee\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Charlool\\AndroidStudioProjects\\GalaxyCoffee\\app\\src\\main\\res\\values-v19\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "229"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list_coffee"
+    tools:context=".ShareOrder"
+    android:id="@+id/relativeLayout">
+
+
+    <ImageView
+        android:id="@+id/userPicture"
+        android:layout_width="270dp"
+        android:layout_height="349dp"
+        android:padding="12dp"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toTopOf="@+id/share_instegram"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/cameraButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="50dp"
+        android:foregroundGravity="center|fill"
+        app:layout_constraintBottom_toTopOf="@+id/userPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="camera.json"
+        app:lottie_loop="false"
+        app:lottie_speed="1.5" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/finger_gesture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/userPicture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="hand.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1.5" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/share_instegram"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="share_instegram.json"
+        app:lottie_loop="true"
+        android:scaleType="fitCenter"
+        app:lottie_speed="0.7" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:text="Take a picture of your order"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#EF0075"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/wendy_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

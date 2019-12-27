@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GalaxyBucks</string>
+    <string-array name="examples">
+        <item>Your Order is Being Prepared</item>
+        <item>#GalaxyBucks\nExplore Our Galaxy</item>
+    </string-array>
+</resources>
+
+

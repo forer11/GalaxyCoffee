@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.galaxycoffie3"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="29" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/cat_button_removebg_preview"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.galaxycoffie3.ChooseCoffeeWindow"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.transparentTheme" />
+        <activity
+            android:name="com.example.galaxycoffie3.MainActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.galaxycoffie3.Payment"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.galaxycoffie3.ChooseMilkWindow"
+            android:theme="@style/AppTheme.CustomTheme2" />
+        <activity
+            android:name="com.example.galaxycoffie3.ShoppingCart"
+            android:configChanges="orientation"
+            android:label="Cart"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.testTheme" />
+        <activity android:name="com.example.galaxycoffie3.ShareOrder" />
+        <activity android:name="com.example.galaxycoffie3.TransitionScreen" />
+    </application>
+
+</manifest>

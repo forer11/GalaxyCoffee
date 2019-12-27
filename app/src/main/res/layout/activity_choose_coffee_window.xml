@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_window1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_list_coffee"
+    tools:context=".ChooseCoffeeWindow">
+
+
+    <LinearLayout
+        android:id="@+id/SliderDots1"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:gravity="clip_vertical|center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="238dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SliderDots1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proceed_coffee">
+
+        <TextView
+            android:id="@+id/coffee_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="5"
+            android:text="Milky Way 3$"
+            android:textColor="@color/dark_goldenrod"
+            android:textSize="30sp"
+            android:textStyle="normal"
+            app:fontFamily="@font/bubblegum_sans" />
+    </LinearLayout>
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/proceed_coffee"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ripple_3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SliderDots1"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="add.json"
+        app:lottie_loop="false"
+        app:lottie_speed="1.5" />
+
+
+    <ImageView
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/gradient_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:gravity="center|top"
+        android:padding="5dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="-2"
+        android:shadowDy="-2"
+        android:shadowRadius="20"
+        android:text="Swipe And Choose \nYour Coffee"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/cherry_swash_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appBar" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/shop_cart_view"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/animation_button"
+        android:foreground="@drawable/ripple_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_fileName="add_to_cart.json"
+        app:lottie_loop="false"
+        app:lottie_speed="1.5" />
+
+    <com.nex3z.notificationbadge.NotificationBadge
+        android:id="@+id/badge"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="-8dp"
+        app:badgeBackground="@drawable/badge_bg_with_shadow"
+        app:layout_constraintRight_toRightOf="@id/shop_cart_view"
+        app:layout_constraintTop_toTopOf="@+id/shop_cart_view"
+        app:maxTextLength="2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

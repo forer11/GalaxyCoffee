@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Payment">
+
+    <EditText
+        android:id="@+id/nameField"
+        android:layout_width="226dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expDateField" />
+
+    <EditText
+        android:id="@+id/creditCardField"
+        android:layout_width="225dp"
+        android:layout_height="44dp"
+        android:digits=" 1234567890"
+        android:imeOptions="actionNext"
+        android:ems="10"
+        android:hint="Credit Card"
+        android:inputType="number"
+        android:maxLength="19"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/screenTitle" />
+
+    <EditText
+        android:id="@+id/cvvField"
+        android:layout_width="227dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="numberPassword"
+        android:maxLength="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/creditCardField"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/orderDetails"
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:gravity="start"
+        android:orientation="horizontal"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/totalOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/totalOrder"
+        android:layout_width="320dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/autour_one"
+        android:gravity="clip_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/creditCardField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screenTitle" />
+
+    <ImageView
+        android:id="@+id/endOfPaymentButton"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:src="@drawable/check"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <ImageView
+        android:id="@+id/questionMark"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/q"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expDateField" />
+
+    <TextView
+        android:id="@+id/screenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/cherry_swash_bold"
+        android:gravity="center"
+        android:text="What you ordered:"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/expDateField"
+        android:layout_width="227dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Exp. MM/YY"
+        android:inputType="date"
+        android:maxLength="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvvField" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAnimation"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="87dp"
+        android:layout_height="82dp"
+        android:progressDrawable="@drawable/circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <ImageView
+        android:id="@+id/securityGuaranteed"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/security"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.02" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
